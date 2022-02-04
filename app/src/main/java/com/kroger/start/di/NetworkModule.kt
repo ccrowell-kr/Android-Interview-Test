@@ -9,6 +9,7 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Converter
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
@@ -27,10 +28,12 @@ object NetworkModule {
     @Singleton
     internal fun provideRetrofit(
         jsonConverterFactory: Converter.Factory,
-        okHttpClient: OkHttpClient
+        okHttpClient: OkHttpClient,
+        rxCallAdapter: RxJava3CallAdapterFactory,
     ): Retrofit {
         return Retrofit.Builder().baseUrl("https://xkcd.com/")
             .client(okHttpClient)
+            .addCallAdapterFactory(rxCallAdapter)
             .addConverterFactory(jsonConverterFactory)
             .build()
     }
@@ -50,5 +53,9 @@ object NetworkModule {
             .add(KotlinJsonAdapterFactory())
             .build()
     }
+
+    @Provides
+    @Singleton
+    internal fun provideRxJavaCallAdapter() = RxJava3CallAdapterFactory.create()
 
 }
