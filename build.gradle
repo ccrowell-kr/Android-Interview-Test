@@ -1,24 +1,19 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.kotlin_version = "1.6.10"
     ext.hilt_version = '2.40.5'
 
     repositories {
-        google()
         mavenCentral()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.1.0"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        /* TODO: Hilt will soon publish a marker artifact, allowing this to be used from a `plugins` block */
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+plugins {
+    id 'com.android.application' version '7.1.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 }
 
 task clean(type: Delete) {
