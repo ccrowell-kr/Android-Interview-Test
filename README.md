@@ -1,17 +1,17 @@
 # Android-Interview-Test
 
-This is a programming skills test for potential Android developers. This project is a skeleton of an
-app to display [XKCD comics](https://xkcd.com/) that needs the missing parts added to actually fetch
-and display comic images.
+This is a programming skills test for potential Android developers. This project is the skeleton of
+an app to display [XKCD comics](https://xkcd.com/). It needs the a few missing parts created to
+actually fetch and display comic images.
 
-You may use any 3rd-party tools to finish this app, but there are a number of libraries already
+You may use any 3rd party tools to finish this app, but there are a number of libraries already
 included in the project for convenience. Making use of these pre-included libraries is optional:
 
 - Dagger Hilt, with several few classes already bound to the graph
 - A networking stack with Retrofit, OkHttp, and Moshi
 - Glide image loader
 - Android ViewModels, Lifecycle, and LiveData (KTX versions)
-- Kotlin Coroutines Android  
+- Kotlin Coroutines Android
 - RxAndroid 3 (and thus RxJava 3 also)
 
 Feel free to reference outside documentation during the test.
