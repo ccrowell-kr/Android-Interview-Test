@@ -9,6 +9,7 @@ included in the project for convenience. Making use of these pre-included librar
 
 - Dagger Hilt, with several few classes already bound to the graph
 - A networking stack with Retrofit, OkHttp, and Moshi
+- Glide image loader
 - Android ViewModels, Lifecycle, and LiveData (KTX versions)
 - RxAndroid 3 (and thus RxJava 3 also)
 

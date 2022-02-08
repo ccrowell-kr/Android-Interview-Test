@@ -44,29 +44,34 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
 
-    //room
-    implementation "androidx.room:room-runtime:2.4.1"
-    kapt "androidx.room:room-compiler:2.4.1"
-    implementation 'androidx.room:room-ktx:2.4.1'
-    androidTestImplementation "androidx.room:room-testing:2.4.1"
+    /* Glide: https://github.com/bumptech/glide */
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
 
-    //retrofit
+    /* Retrofit  https://github.com/square/retrofit */
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
 
-    //moshi
+    /* Moshi https://github.com/square/moshi */
     implementation 'com.squareup.moshi:moshi:1.13.0'
     implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
-    //okhttp
+
+    /* OkHttp */
     implementation 'com.squareup.okhttp3:okhttp:3.14.9'
-    //hilt
+
+    /* Dagger Hilt https://github.com/google/dagger */
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
-    //rx java
+    /* RxAndroid and RxJava https://github.com/ReactiveX/RxAndroid */
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+    /* ROOM */
+    implementation "androidx.room:room-runtime:2.4.1"
+    kapt "androidx.room:room-compiler:2.4.1"
+    implementation 'androidx.room:room-ktx:2.4.1'
+    androidTestImplementation "androidx.room:room-testing:2.4.1"
 
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'androidx.arch.core:core-testing:2.1.0'
