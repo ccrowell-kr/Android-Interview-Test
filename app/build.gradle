@@ -44,6 +44,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
     /* Glide: https://github.com/bumptech/glide */
     implementation 'com.github.bumptech.glide:glide:4.13.0'
