@@ -1,7 +1,7 @@
 package com.kroger.start
 
 import io.reactivex.rxjava3.core.Observable
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 /**
  * This is just a test that these classes are available on the classpath

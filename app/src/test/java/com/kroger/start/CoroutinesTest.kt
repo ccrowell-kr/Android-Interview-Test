@@ -2,7 +2,7 @@ package com.kroger.start
 
 import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 /**
  * This is just a test to ensure that coroutines are on the classpath
