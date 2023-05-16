@@ -7,14 +7,15 @@ actually fetch and display comic images.
 You may use any 3rd party tools to finish this app, but there are a number of libraries already
 included in the project for convenience. Making use of these pre-included libraries is optional:
 
-- Dagger Hilt, with several few classes already bound to the graph
+- Dagger Hilt, with several classes already bound to the graph
 - A networking stack with Retrofit, OkHttp, and Moshi
-- Glide image loader
+- Glide image loader (XML)
+- Coil image loader (Compose)
 - Android ViewModels, Lifecycle, and LiveData (KTX versions)
 - Kotlin Coroutines Android
 - RxAndroid 3 (and thus RxJava 3 also)
 
-Feel free to reference outside documentation during the test.
+Feel free to reference any outside documentation during the test.
 
 ## XKCD's Comic API
 
