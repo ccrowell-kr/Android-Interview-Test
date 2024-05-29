@@ -1,6 +1,6 @@
 buildscript {
-    ext.kotlin_version = "1.8.0"
-    ext.hilt_version = '2.44.2'
+    ext.kotlin_version = "1.9.23"
+    ext.hilt_version = '2.51.1'
 
     repositories {
         google()
@@ -13,8 +13,8 @@ buildscript {
 }
 
 plugins {
-    id 'com.android.application' version '7.4.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'com.android.application' version '8.4.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.23' apply false
 }
 
 task clean(type: Delete) {
