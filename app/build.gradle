@@ -1,8 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
+    id 'com.google.devtools.ksp'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
@@ -99,7 +99,7 @@ dependencies {
 
     /* Dagger Hilt https://github.com/google/dagger */
     implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    ksp "com.google.dagger:hilt-compiler:$hilt_version"
 
     /* RxAndroid and RxJava https://github.com/ReactiveX/RxAndroid */
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
@@ -107,7 +107,7 @@ dependencies {
 
     /* ROOM */
     implementation "androidx.room:room-runtime:2.6.1"
-    kapt "androidx.room:room-compiler:2.6.1"
+    ksp "androidx.room:room-compiler:2.6.1"
     implementation 'androidx.room:room-ktx:2.6.1'
     androidTestImplementation "androidx.room:room-testing:2.6.1"
 
