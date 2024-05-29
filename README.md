@@ -54,7 +54,7 @@ Here's an example response body:
 ## Your Task
 
 To begin, make a network call to get the most recent comic, and then display that comic's details
-using `ComicFragment`. In the UI, be sure to include:
+using `ComicFragment` for an xml based view, or `ComicScreen` for a compose based view. In the UI, be sure to include:
 
 - The comic's title
 - The rendered comic image
