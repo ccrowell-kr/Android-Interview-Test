@@ -1,22 +1,16 @@
 buildscript {
-    ext.kotlin_version = "1.8.0"
-    ext.hilt_version = '2.44.2'
+    ext.kotlin_version = '1.9.23'
+    ext.hilt_version = '2.51.1'
 
     repositories {
         google()
         mavenCentral()
     }
-    dependencies {
-        /* TODO: Hilt will soon publish a marker artifact, allowing this to be used from a `plugins` block */
-        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
-    }
 }
 
 plugins {
-    id 'com.android.application' version '7.4.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    id 'com.android.application' version '8.4.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.23' apply false
+    id 'com.google.devtools.ksp' version '1.9.23-1.0.20' apply false
+    id 'com.google.dagger.hilt.android' version "$hilt_version" apply false
 }
