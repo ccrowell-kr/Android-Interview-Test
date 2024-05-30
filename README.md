@@ -12,6 +12,7 @@ Please do all of the following before the interview:
 3. Install the Android SDK version used for this project (SDK level 34)
 4. Build and run the app target
 5. Look over the existing code
+6. Please wait until the interview begins to start writing code
 
 ## Your Task
 
