@@ -1,4 +1,4 @@
-package com.kroger.start.db
+package com.kroger.start.model
 
 data class Comic(
     val month: String,

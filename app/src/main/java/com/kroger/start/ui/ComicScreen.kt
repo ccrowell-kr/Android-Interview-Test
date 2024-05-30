@@ -1,5 +1,6 @@
 package com.kroger.start.ui
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -15,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kroger.start.R
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun ComicScreen() {
     Scaffold(
