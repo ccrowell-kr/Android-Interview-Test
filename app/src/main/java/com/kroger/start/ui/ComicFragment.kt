@@ -16,16 +16,13 @@ class ComicFragment : Fragment() {
 
     private val comicViewModel: ComicViewModel by viewModels()
 
-    private var _binding: FragmentComicDetailsBinding? = null
-    private val binding: FragmentComicDetailsBinding
-        get() = _binding!!
+    private val binding by lazy { FragmentComicDetailsBinding.inflate(layoutInflater, null, false) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        _binding = FragmentComicDetailsBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
